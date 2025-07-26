@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrée sécurisée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f5f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    input, button {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bienvenue 💐</h2>
+  <p>Veuillez entrer le code pour accéder au faire-part :</p>
+  <input type="password" id="code" placeholder="Code secret">
+  <button onclick="checkCode()">Entrer</button>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById('code').value;
+      if (code === 'tulipe2026') {
+        window.location.href = 'index.html';
+      } else {
+        alert('Code incorrect. Réessaie 😊');
+      }
+    }
+  </script>
+</body>
+</html>
