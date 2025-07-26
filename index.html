@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faire-part de mariage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mathis & Alexia</h1>
+    <p>26 septembre 2026 · Jardin Enchanté</p>
+  </header>
+
+  <section>
+    <h2>Informations</h2>
+    <p>Nous avons le plaisir de vous inviter à célébrer notre mariage dans un cadre magique, entourés de tulipes et d'amour. La cérémonie débutera à 15h dans le Jardin Botanique de Montpellier, suivie d'une réception pleine de surprises.</p>
+  </section>
+
+  <section>
+    <h2>Programme</h2>
+    <ul>
+      <li><strong>15h00 :</strong> Cérémonie dans le Jardin</li>
+      <li><strong>16h30 :</strong> Cocktail enchanté</li>
+      <li><strong>19h00 :</strong> Dîner et soirée féérique</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Confirmation de présence</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="guests">Nombre de personnes</label>
+      <select id="guests" name="guests">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <label for="message">Message ou régime particulier ?</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Je confirme ma présence</button>
+    </form>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem;">Ce formulaire utilise <a href="https://formspree.io/" target="_blank">Formspree</a> pour l'envoi d'e-mails.</p>
+  </section>
+</body>
+</html>

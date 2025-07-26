@@ -1,0 +1,74 @@
+:root {
+  --rose: #e4c4d4;
+  --vert: #cde0c6;
+  --doré: #d6ad60;
+  --beige: #faf8f2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--beige);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to bottom right, var(--vert), var(--rose));
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Tulip_flower_pink.jpg/640px-Tulip_flower_pink.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  color: var(--doré);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, select, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--rose);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--doré);
+}
